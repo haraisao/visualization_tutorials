@@ -26,10 +26,15 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-
+#ifdef WIN32
+#include <OgreVector3.h>
+#include <OgreSceneNode.h>
+#include <OgreSceneManager.h>
+#else
 #include <OGRE/OgreVector3.h>
 #include <OGRE/OgreSceneNode.h>
 #include <OGRE/OgreSceneManager.h>
+#endif
 
 #include <rviz/ogre_helpers/arrow.h>
 

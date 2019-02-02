@@ -27,8 +27,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#ifdef WIN32
+#include <OgreSceneNode.h>
+#include <OgreSceneManager.h>
+#else
 #include <OGRE/OgreSceneNode.h>
 #include <OGRE/OgreSceneManager.h>
+#endif
 
 #include <tf/transform_listener.h>
 
